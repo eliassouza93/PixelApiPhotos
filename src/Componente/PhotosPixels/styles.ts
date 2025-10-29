@@ -11,18 +11,34 @@ export const PhotoCard = styled.div`
   flex-direction: column;
   background-color: #fff;
   cursor: pointer;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    height: 100%;
+  }
 `;
+
 export const PhotoImage = styled.img`
   width: 100%;
   height: 550px;
   object-fit: cover;
   display: block;
+
+  @media (max-width: 768px) {
+    height: 100%;
+    margin-top: 10px;
+    cursor: none;
+  }
 `;
 
 export const PhotographerText = styled.p`
-  text-align: center;
+   text-align: center;
   color: gray;
   font-size: 10px;
   padding: 8px 0;
   margin: 0;
+
+  @media (min-width: 768px) {
+    font-size: 10px;
+  }
 `;
