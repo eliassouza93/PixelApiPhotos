@@ -69,7 +69,7 @@ export const PhotographerText = styled.p`
 
 export const Title = styled.h3`
   text-align: center;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 500;
   color: #727b85ff;
   padding: 40px 0 15px 0;

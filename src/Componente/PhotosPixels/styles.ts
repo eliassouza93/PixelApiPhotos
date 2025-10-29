@@ -5,8 +5,8 @@ export const PhotoCard = styled.div`
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  width: 300px;
-  height: 600px;
+  width: 200px;
+  height: 400px;
   display: flex;
   flex-direction: column;
   background-color: #fff;
@@ -21,7 +21,7 @@ export const PhotoImage = styled.img`
 export const PhotographerText = styled.p`
   text-align: center;
   color: gray;
-  font-size: 0.9em;
+  font-size: 10px;
   padding: 8px 0;
   margin: 0;
 `;

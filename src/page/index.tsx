@@ -52,7 +52,7 @@ export const Home: React.FC = () => {
       return;
     }
 
-    const apiUrl = `https://api.pexels.com/v1/curated?per_page=21&page=${page}`;
+    const apiUrl = `https://api.pexels.com/v1/curated?per_page=20&page=${page}`;
 
     axios
       .get(apiUrl, {
