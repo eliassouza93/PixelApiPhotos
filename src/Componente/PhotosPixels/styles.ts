@@ -10,6 +10,7 @@ export const PhotoCard = styled.div`
   display: flex;
   flex-direction: column;
   background-color: #fff;
+  cursor: pointer;
 `;
 export const PhotoImage = styled.img`
   width: 100%;

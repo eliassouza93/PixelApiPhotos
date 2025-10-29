@@ -15,8 +15,11 @@ interface PhotoPixelProps {
 }
 
 export const PhotoPixel: React.FC<PhotoPixelProps> = ({ photo }) => {
+  const handleClick: () => void = () => {
+    window.open(photo.src.original, "_blank");
+  };
   return (
-    <PhotoCard key={photo.id}>
+    <PhotoCard onClick={handleClick}  key={photo.id}>
       <PhotoImage
         src={photo.src.original}
         alt={`Foto por ${photo.photographer}`}
