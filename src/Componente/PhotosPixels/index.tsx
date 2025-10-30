@@ -9,7 +9,7 @@ interface Photo {
     original: string;
   };
 }
-
+//photo
 interface PhotoPixelProps {
   photo: Photo;
 }
