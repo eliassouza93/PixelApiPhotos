@@ -12,6 +12,11 @@ export const PhotoCard = styled.div`
   background-color: #fff;
   cursor: pointer;
 
+  @media (max-width: 1700px) {
+    width: 200px;
+    height: 400px;
+  }
+
   @media (max-width: 768px) {
     width: 100%;
     height: 100%;
@@ -24,6 +29,11 @@ export const PhotoImage = styled.img`
   object-fit: cover;
   display: block;
 
+  @media (max-width: 1700px) {
+    width: 100%;
+    height: 100%;
+  }
+
   @media (max-width: 768px) {
     height: 100%;
     margin-top: 10px;
@@ -32,7 +42,7 @@ export const PhotoImage = styled.img`
 `;
 
 export const PhotographerText = styled.p`
-   text-align: center;
+  text-align: center;
   color: gray;
   font-size: 10px;
   padding: 8px 0;
