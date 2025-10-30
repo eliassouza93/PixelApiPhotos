@@ -24,6 +24,7 @@ interface Photo {
   id: number;
   url: string;
   photographer: string;
+  original: string;
   src: {
     original: string;
   };
@@ -52,7 +53,13 @@ export const Home: React.FC = () => {
       return;
     }
 
-    const apiUrl = `https://api.pexels.com/v1/curated?per_page=20&page=${page}`;
+    const apiUrl = `https://api.pexels.com/v1/curated?per_page=220&page=${page}`;
+
+    // const urlPixel = photos
+    //   .filter((t) => t.src?.original)
+    //   .map((t) => t.src?.original)
+
+    // console.log("teste", urlPixel);
 
     axios
       .get(apiUrl, {
@@ -63,7 +70,6 @@ export const Home: React.FC = () => {
       .then((response: any) => {
         setPhotos(response.data.photos);
         setHasMore(!!response.data.next_page);
-        console.log(`Página ${page} carregada.`, response.data);
       })
       .catch((error: any) => {
         console.error("Erro ao conectar à Pexels API:", error);

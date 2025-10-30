@@ -5,8 +5,8 @@ export const PhotoCard = styled.div`
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  width: 200px;
-  height: 400px;
+  width: 400px;
+  height: 800px;
   display: flex;
   flex-direction: column;
   background-color: #fff;
@@ -20,7 +20,7 @@ export const PhotoCard = styled.div`
 
 export const PhotoImage = styled.img`
   width: 100%;
-  height: 550px;
+  height: 100%;
   object-fit: cover;
   display: block;
 
